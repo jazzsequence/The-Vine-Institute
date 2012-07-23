@@ -245,9 +245,8 @@ div.aligncenter {
 	border: none;	
 }
 .search #searchsubmit {
-	background: url(images/searchgo.png) center no-repeat;
+	background: transparent;
 	height: 15px;
-	width: 21px;
 	border: none;
 	position: relative;
 	top: 2px;
