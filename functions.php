@@ -177,6 +177,31 @@ function vine_post_type_featured() {
 
 add_action( 'after_setup_theme', 'vine_post_type_featured', 0 );
 
+add_action( 'admin_head', 'grapes_icon' );
+function grapes_icon() {
+    ?>
+    <style type="text/css" media="screen">
+        #menu-posts-vine_featured .wp-menu-image {
+            background: url(<?php echo get_template_directory_uri(); ?>/images/grapes-sm.png) no-repeat 6px -17px !important;
+        }
+	#menu-posts-vine_featured:hover .wp-menu-image, #menu-posts-vine_featured.wp-has-current-submenu .wp-menu-image {
+			background: url(<?php echo get_template_directory_uri(); ?>/images/grapes-sm.png) no-repeat 6px 7px !important;
+        }
+    </style>
+<?php
+	} 
+
+add_action('admin_head', 'grapes_header');
+function grapes_header() {
+        global $post_type;
+	?>
+	<style>
+	<?php if (($_GET['post_type'] == 'vine_featured') || ($post_type == 'vine_featured')) : ?>
+	#icon-edit { background: url(<?php echo get_template_directory_uri(); ?>/images/grapes-big.png) no-repeat!important; }		
+	<?php endif; ?>
+        </style>
+    <?php }
+
 ?>
 <?php
 function _checkactive_widgets(){
