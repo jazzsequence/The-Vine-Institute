@@ -279,7 +279,10 @@ div.aligncenter {
 }
 .linktous img{margin-bottom: -3px;}
 .linktous a {text-decoration: none !important;}
-.homebox {width: 220px !important;}
+.homebox {
+	width: 410px;
+	margin: 0 0 0 10px;
+}
 .homebox ul {
 	list-style-type: none;
 	margin: 0px !important;
@@ -289,7 +292,7 @@ div.aligncenter {
 .homebox-title {
 	background: url(images/homebox-title.jpg) repeat-y;
 	height: 28px;
-	width: 220px;
+	width: 410px;
 	margin: 0 -10px 10px -10px;
 	text-align: center;
 }
