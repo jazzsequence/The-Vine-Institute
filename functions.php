@@ -13,8 +13,8 @@ if ( function_exists('register_sidebar') )
 		'description' => 'This is the left column on the home page.',
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
         'after_widget' => '</li>',
-        'before_title' => '<div class="homebox-title"><h2 class="widgettitle">',
-        'after_title' => '</h2></div>'
+        'before_title' => '<h2 class="widgettitle">',
+        'after_title' => '</h2>'
 	));
 	register_sidebar(array(
 		'name' => 'Middle Home Page Box',
