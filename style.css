@@ -196,7 +196,7 @@ div.aligncenter {
 }
 .navbar li {
 	float: left;
-	border-left: 2px dotted #cfcfcf;
+	border-left: 1px dotted #cfcfcf;
 	width: 7em;
 	font-size: 1.3em;
 }
