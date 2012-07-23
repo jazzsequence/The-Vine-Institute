@@ -1,0 +1,417 @@
+/*  
+Theme Name: the Vine
+Theme URI: http://www.arcanepalette.com
+Description: a customized WordPress theme by <a href="http://www.arcanepalette.com">Arcane Palette Creative Design</a>
+Version: 1.0
+Author: Arcane Palette Creative Design
+Author URI: http://www.arcanepalette.com
+*/
+
+/* Main */
+body {
+	background: #fefefe;
+	font-family: 'Droid Sans', sans-serif;
+	color: #111111;
+}
+.container {
+
+}
+
+a:active, a:hover {text-decoration:none;}
+
+.spacer-10 {
+	clear:both;
+	height: 10px;
+}
+
+.threecolumn {
+	width: 32%;
+	float: left;
+	margin-right: 10px;
+}
+h1, h2, h3, h4, h5 {margin: auto; font-family:Arial, Helvetica, sans-serif;}
+a:link, a:visited {
+	color: #6a9f01;
+	text-decoration: none;	
+}
+a:hover, a:active {
+	color: #556e22;
+}
+
+/* this stuff is borrowed from Kubrik, the WordPress default theme and handles 
+   WP-specific stuff. */
+   
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right !important;
+	}
+
+.alignleft {
+	float: left !important;
+	}
+/* Calendar */
+#wp-calendar {
+	empty-cells: show;
+	margin: 10px auto 0;
+	}
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+	}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+	}
+
+#wp-calendar a {
+	display: block;
+	}
+
+#wp-calendar caption {
+	text-align: center;
+	width: 100%;
+	padding: 3px 0 4px 0!important;
+	}
+
+#wp-calendar td {
+	padding: 3px 0;
+	text-align: center;
+	}
+
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+	background-color: #fff; }
+
+#wp-calendar a {
+	text-decoration: none;
+	}
+
+#wp-calendar caption {
+	text-align: center;
+	}
+
+#wp-calendar th {
+	font-style: normal;
+	text-transform: capitalize;
+	}	
+/* Captions */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+
+/* Header */
+.header {
+	background:url(images/vineheader.jpg) center no-repeat;
+	height: 151px;
+	width: 950px;
+}
+.alt-header {
+	background:url(images/altheader.jpg) center no-repeat;
+	height: 151px;
+	width: 950px;	
+}
+.page_title {
+	color: #ffffff;
+	font-size: 3.2em;
+	position:relative;
+	left: 10px;
+	top: 90px;
+}
+
+.siteinfo {
+	position: absolute;
+	left: -999em;	
+}
+
+.navbar {	
+	background: #242021;
+	width: 100%;
+	height: 65px;
+	margin: 0 !important;
+	text-align: center;
+}
+.navbar ul {
+	list-style-type: none;
+	float:right;
+	margin: 0 !important;
+}
+.navbar li {
+	float: left;
+	border-left: 2px dotted #cfcfcf;
+	width: 7em;
+	font-size: 1.3em;
+}
+.navbar li a:link, .navbar a:visited {color: #cfcfcf; text-decoration: none; text-transform:uppercase;}
+.navbar li a:hover, .navbar a:active {position:relative; z-index:999;}
+.navbar li:hover {background: #3d3d3d; }
+.navbar li:hover a{color: #efefef;}
+.first {margin-left: 0px !important; border-left: none !important;}
+.navbar li li {
+	background: #242021;	
+	display: inline;
+	margin: 0;
+	clear: left;
+	position: relative;
+	z-index: 999;
+	border-left: none !important;
+	font-size: 1.0em;
+}
+.navbar li li a {text-transform: none!important; font-size: 0.9em;}
+.navbar li ul {
+	background: #242021;
+	position: absolute;
+	left: -999em;
+	width: 7em;
+}
+.navbar li:hover ul {
+	left: auto;
+}
+.navbar li:hover ul, #nav li.sfhover ul {
+	left: auto;
+}	
+
+.search {
+	float:right;
+	position: relative;
+	top: 10px;
+	right: 10px;
+}
+.search #s {
+	background: url(images/searchbg.png) center no-repeat;
+	height: 27px;
+	width: 109px;
+	padding: 0 10px;
+	line-height: 27px;
+	font-size: 0.8em;
+	border: none;	
+}
+.search #searchsubmit {
+	background: url(images/searchgo.png) center no-repeat;
+	height: 15px;
+	width: 21px;
+	border: none;
+	position: relative;
+	top: 2px;
+}
+
+/* Content */
+
+.content {
+	margin-top: 10px;
+	width: 680px;
+	float: left;
+}
+
+.post {
+	background: #f5f5f5;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+
+.the_title {font-size: 2.7em;}
+.the_date h3 {margin-bottom: 0 !important; }
+.postmetadata {padding: 0 0 5px 0;}
+.navigation {
+	margin: 10px auto;
+}
+.linktous img{margin-bottom: -3px;}
+.linktous a {text-decoration: none !important;}
+.homebox {width: 220px !important;}
+.homebox ul {
+	list-style-type: none;
+	margin: 0px !important;
+	background: #eeeeed;	
+	padding: 0 10px 5px 10px;
+}
+.homebox-title {
+	background: url(images/homebox-title.jpg) repeat-y;
+	height: 28px;
+	width: 220px;
+	margin: 0 -10px 10px -10px;
+	text-align: center;
+}
+.homebox h2 {
+	font-size: 24px;
+	line-height: 28px;
+	text-shadow: 1px 1px 1px #eeeeed;
+	color: #242021	;
+}
+.jdGallery a.right, .jdGallery a.left {background-image: none!important;}
+
+.reenie-beanie {
+	font-family: 'Reenie Beanie', sans-serif;
+	font-size: 2.5em;	
+	line-height: 0.9em!important;
+	padding: 10px 0;
+}
+
+.thumbnail {
+	float: left;
+	margin-right: 10px;	
+}
+
+/* Sidebar */
+
+.sidebar {
+	background-color: #edf4e6;
+	width: 240px;
+	position:relative;
+	height:100%;
+	float: right;
+	padding: 0 10px 10px 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 100%;
+	font-size: 1.05em;
+}
+
+.twitterfollow {
+	background: url(images/twitterfollow.png) center no-repeat;
+	height: 24px;
+	width: 212px;	
+	margin: auto;
+	line-height: 23px;
+	text-align: right;
+	padding-right: 12px;
+	font-size: 0.95em;
+}
+.twitterfollow a:link, .twitterfollow a:visited {
+	color: #dddddd;
+	text-shadow: 1px 1px 1px #333333;
+	text-decoration: none;	
+}
+.twitterfollow a:hover, .twitterfollow a:active {
+	color: #ffffff;	
+}
+
+ul.sidebar, .sidebar ul  {
+	list-style-type: none;
+	margin: 0px !important;
+}
+.the_left {
+	margin-left: 0!important;
+	margin-right: 10px;
+	float: left !important;
+}
+
+.sidebar h2 {text-align: center; text-shadow: 1px 0px 1px #ffffff;}
+
+.programs li {
+	background-color: #F8FDF4;
+	margin-bottom: 20px;
+	padding: 0 10px 10px 10px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border: 1px solid #B1CA77;
+}
+
+/* Footer */
+
+.footer {
+	width: 100%;
+	text-align: center;
+}
+.bottomnav {
+	text-transform: uppercase;
+	height: 26px;
+	background: #494848;	
+}
+.bottomnav ul {list-style-type:none;}
+.bottomnav li {
+	display: inline;
+	line-height: 26px;
+	margin: 0 10px;
+}
+.bottomnav a:link, .bottomnav a:visited {
+	color: #ffffff;
+	text-decoration: none;	
+}
+.bottomnav a:hover, .bottomnav a:active {
+	color: #cccccc;
+}
+.credit {
+	background: #d8d8d8;
+	height: 68px;
+	line-height: 68px;
+	color: #6b6b6b;	
+}
+.credit a:link, .credit a:visited {
+	color: #333333;
+	text-decoration: none;
+}
+.credit a:hover, .credit a:active {
+	color: #6b6b6b;
+}
+/* other stuff */
+.widgettitle {text-align: center!important;}
+#wp-calendar {width: 195px!important;}
+.calendar-month {font-weight: normal!important; font-size: 1.1em; text-transform:uppercase;}
+#wp-calendar th {
+	text-align:center!important;
+	background-color:#56771A!important;
+}
+#wp-calendar #today {
+	background-color: #CFE38A!important;
+}
+.EC_title, .ec_title {	background-color: #CFE38A!important;}
+#events-calendar-list li {list-style-image: none!important;}
+#events-calendar-list li:hover {background: none!important; border: none!important; padding: 0 5px!important;}
+
+#dfcg-image img { margin-left: 0!important; }
+#dfcg-text { padding-bottom: 0!important; }
+
+/* event espresso stuff */
+#event_espresso_registration_form label { display: block; }
