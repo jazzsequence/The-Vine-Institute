@@ -316,6 +316,11 @@ div.aligncenter {
 	margin-right: 10px;	
 }
 
+.feature img {
+	max-width: 100%;
+	height: auto;
+}
+
 /* Sidebar */
 
 .sidebar {
