@@ -7,17 +7,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-type" content="text/html;charset=utf-8" />	
-    <title><?php bloginfo('name'); ?> | <?php 
-	$category = get_the_category();
-	if (is_home () ) { bloginfo('description'); }
-	elseif ( is_category() ) { single_cat_title(); }
-	elseif (is_single() ) { echo $category[0]->cat_name . ' | '; single_post_title();}
-	elseif (is_page() ) { single_post_title();}
-	else { wp_title('',true); } ?></title>
+    <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />   
-    <?php if (is_page('Programs')) { ?>
-	<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>    
-    <? } ?> 
 	<link rel="Shortcut Icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/blueprint/screen.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/blueprint/print.css" type="text/css" media="print" /> 
