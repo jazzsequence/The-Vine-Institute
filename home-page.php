@@ -57,9 +57,27 @@
 <div class="content">
 
 	<div class="sidebar alignleft first top">
+		<?php
+			global $wp_query;
+			$temp = $wp_query;
+			$wp_query = null;
+			$wp_query = new WP_Query();
+			$showposts = 1;
+			$args = array(
+				'post_type' => 'vine_featured',
+				'posts_per_page' => $showposts
+			);
+			query_posts($args); ?>
+			<div class="feature">
+				<?php while ( have_posts() ) : the_post(); ?>
+					<h2><?php the_title(); ?></h2>
+					<?php the_content(); ?>
+				<?php endwhile; ?>
+				<?php $wp_query = null; $wp_query = $temp; ?>
+			</div>
 		  <ul>
         	 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Left Home Page Box') ) : ?>
-             <?php endif; ?>        
+             <?php endif; ?>
           </ul>
 	</div>
 
