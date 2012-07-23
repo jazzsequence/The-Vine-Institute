@@ -56,30 +56,25 @@
 
 <div class="content">
 
-	    <?php if (function_exists ('dynamic_content_gallery')){
-				dynamic_content_gallery();
-		};?>
-        
-	<div class="spacer-10"></div>
-
-	<div class="column homebox">
+	<div class="sidebar alignleft first top">
 		  <ul>
         	 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Left Home Page Box') ) : ?>
              <?php endif; ?>        
-          </ul>   
-	</div>        
+          </ul>
+	</div>
+
 	<div class="column homebox">
+	    <?php if (function_exists ('dynamic_content_gallery')){
+				dynamic_content_gallery();
+		};?>
+
+	<div class="spacer-10"></div>
 		  <ul>
         	 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Middle Home Page Box') ) : ?>
              <?php endif; ?>        
           </ul>   
-	</div>              
-	<div class="column homebox last">
-		  <ul>
-        	 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Right Home Page Box') ) : ?>
-             <?php endif; ?>        
-          </ul>   
-	</div>            
+	</div>
+
 </div>
 <?php get_sidebar(); ?>          
 <div class="clear"></div>
