@@ -188,9 +188,10 @@ div.aligncenter {
 }
 .tagline {
 	position: absolute;
-	right: 20px;
-	top: 40px;
+	left: 353px;
+	top: 49px;
 }
+h2.tagline { font-size: 1.5em; }
 .page_title {
 	color: #ffffff;
 	font-size: 3.2em;
