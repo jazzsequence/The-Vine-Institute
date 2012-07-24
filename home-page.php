@@ -45,9 +45,10 @@
 	<div class="clear"></div>        
 
 <div class="header">
+	<div class="vine-logo"></div>
+	<h2 class="tagline"><?php bloginfo('description'); ?></h2>
 	<div class="siteinfo">
         <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('title'); ?>"><?php bloginfo('title'); ?></a></h1>
-		<h2><?php bloginfo('description'); ?></h2>
     </div>       
     <div class="search"><?php get_search_form(); ?></div>
 </div>

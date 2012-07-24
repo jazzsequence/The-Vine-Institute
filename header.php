@@ -48,16 +48,10 @@
 	    </div>  
 	<div class="clear"></div>        
 
-<?php if (is_page('Home')) { ?>
+<?php if ( is_single() ) { ?>
 <div class="header">
-	<div class="siteinfo">
-        <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('title'); ?>"><?php bloginfo('title'); ?></a></h1>
-		<h2><?php bloginfo('description'); ?></h2>
-    </div>       
-    <div class="search"><?php get_search_form(); ?></div>
-</div>
-<?php } if ((is_home()) || (is_single())) { ?>
-<div class="header">
+  <div class="vine-logo"></div>
+  <h2 class="tagline"><?php bloginfo('description'); ?></h2>
 	<div class="siteinfo">
         <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('title'); ?>"><?php bloginfo('title'); ?></a></h1>
 		<h2><?php bloginfo('description'); ?></h2>
@@ -67,8 +61,9 @@
 
 <?php } else { ?>
 <div class="alt-header">
+    <div class="vine-logo"></div>
     <div class="search"><?php get_search_form(); ?></div>
-        <h1 class="page_title"><?php the_title(); ?></h1>
+        <h1 class="page_title"><?php wp_title("", true); ?></h1>
 </div>
 <?php } ?>
 
